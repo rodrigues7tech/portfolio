@@ -1,0 +1,334 @@
+<!DOCTYPE html><html class="dark" lang="pt-BR"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@300;400;700;900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+          tailwind.config = {
+            darkMode: "class",
+            theme: {
+              extend: {
+                colors: {
+                  "on-primary-container": "#00626e",
+                  "primary-fixed": "#9cf0ff",
+                  "on-error-container": "#ffdad6",
+                  "outline": "#849396",
+                  "surface-bright": "#393939",
+                  "error": "#ffb4ab",
+                  "surface-container-low": "#1c1b1b",
+                  "on-tertiary-fixed": "#251a00",
+                  "tertiary": "#ffeac0",
+                  "secondary-fixed-dim": "#b9c7e4",
+                  "on-error": "#690005",
+                  "tertiary-container": "#fec931",
+                  "on-primary": "#00363d",
+                  "surface-container-high": "#2a2a2a",
+                  "on-surface": "#e5e2e1",
+                  "on-secondary-fixed-variant": "#39475f",
+                  "error-container": "#93000a",
+                  "tertiary-fixed-dim": "#f3bf26",
+                  "secondary-container": "#3c4962",
+                  "tertiary-fixed": "#ffdf96",
+                  "on-tertiary": "#3e2e00",
+                  "secondary-fixed": "#d6e3ff",
+                  "on-surface-variant": "#bac9cc",
+                  "on-secondary": "#233148",
+                  "surface-tint": "#00daf3",
+                  "inverse-primary": "#006875",
+                  "surface-variant": "#353534",
+                  "surface-container-highest": "#353534",
+                  "on-primary-fixed-variant": "#004f58",
+                  "surface-dim": "#131313",
+                  "surface-container-lowest": "#0e0e0e",
+                  "primary-fixed-dim": "#00daf3",
+                  "on-tertiary-fixed-variant": "#594400",
+                  "on-primary-fixed": "#001f24",
+                  "inverse-on-surface": "#313030",
+                  "background": "#131313",
+                  "secondary": "#b9c7e4",
+                  "primary": "#c3f5ff",
+                  "inverse-surface": "#e5e2e1",
+                  "on-secondary-container": "#abb9d6",
+                  "primary-container": "#00e5ff",
+                  "surface-container": "#201f1f",
+                  "surface": "#131313",
+                  "on-secondary-fixed": "#0d1c32",
+                  "outline-variant": "#3b494c",
+                  "on-tertiary-container": "#6f5500",
+                  "on-background": "#e5e2e1"
+                },
+                fontFamily: {
+                  "headline": ["Space Grotesk"],
+                  "body": ["Inter"],
+                  "label": ["Inter"]
+                },
+                borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+              },
+            },
+          }
+        </script>
+<style>
+          .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+          }
+          .kinetic-grid {
+            background-image: radial-gradient(circle at 2px 2px, rgba(59, 73, 76, 0.15) 1px, transparent 0);
+            background-size: 40px 40px;
+          }
+          html {
+            scroll-behavior: smooth;
+          }
+        </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-neutral-950/80 backdrop-blur-xl border-b border-white/10 shadow-[0_0_40px_rgba(0,229,255,0.06)]">
+<div class="flex justify-between items-center px-8 py-4 max-w-full">
+<div class="text-xl font-black tracking-tighter text-cyan-400" style="">7codigo</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="font-['Space_Grotesk'] uppercase tracking-[0.1em] text-xs font-bold text-neutral-400 hover:text-white transition-colors" href="#home" style="">INÍCIO</a>
+<a class="font-['Space_Grotesk'] uppercase tracking-[0.1em] text-xs font-bold text-neutral-400 hover:text-white transition-colors" href="#stack" style="">TECNOLOGIAS</a>
+<a class="font-['Space_Grotesk'] uppercase tracking-[0.1em] text-xs font-bold text-neutral-400 hover:text-white transition-colors" href="#experience" style="">TRAJETÓRIA</a>
+<a class="font-['Space_Grotesk'] uppercase tracking-[0.1em] text-xs font-bold text-neutral-400 hover:text-white transition-colors" href="#projects" style="">PROJETOS</a>
+<a class="font-['Space_Grotesk'] uppercase tracking-[0.1em] text-xs font-bold text-neutral-400 hover:text-white transition-colors" href="#contact" style="">CONTATO</a>
+</nav>
+<button class="bg-white/5 hover:bg-white/10 text-cyan-400 px-6 py-2 font-['Space_Grotesk'] uppercase tracking-[0.1em] text-xs font-bold active:scale-95 transition-all" style="">CURRÍCULO</button>
+</div>
+</header>
+<main class="pt-24 kinetic-grid">
+<!-- Section 1: Hero (Home) -->
+<section class="min-h-[819px] flex flex-col justify-center px-8 md:px-24 mb-24 relative" id="home">
+<div class="absolute top-1/2 left-1/4 -translate-y-1/2 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[120px] -z-10"></div>
+<div class="max-w-5xl">
+<div class="flex items-center gap-4 mb-8">
+<div class="h-px w-12 bg-primary"></div>
+<span class="font-label text-sm uppercase tracking-[0.2em] text-on-surface-variant" style="">FULLSTACK</span>
+</div>
+<h1 class="font-headline text-5xl md:text-8xl font-black tracking-[-0.04em] mb-8 leading-[0.9] text-on-surface" style="">
+<font color="#e5e2e1">Gilberto Rodrigues</font>
+<div><span class="text-primary-container" style="">Dev FullStack</span></div>
+</h1>
+<p class="font-body text-xl md:text-2xl text-on-surface-variant max-w-2xl leading-relaxed" style="">Transformo complexidade em performance através de RPA, IA e desenvolvimento Fullstack de alta precisão.
+                </p>
+<div class="mt-12 flex flex-wrap gap-6">
+<a class="bg-on-primary-container text-white px-8 py-4 font-label text-md font-bold uppercase tracking-widest active:scale-95 transition-transform inline-block" href="#contact" style="">
+                        Vamos Conversar
+                    </a>
+<button class="bg-surface-variant/10 backdrop-blur-md border border-outline-variant/30 text-on-surface px-8 py-4 font-label text-md font-bold uppercase tracking-widest hover:bg-surface-variant/20 transition-all" style="">
+                        Baixar Meu CV
+                    </button>
+</div>
+</div>
+</section>
+<!-- Impact Bar (Part of flow) -->
+<section class="px-8 md:px-24 mb-24">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 bg-surface-container-low p-12 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 border-t border-r border-primary/20 m-4"></div>
+<div class="absolute top-4 right-4 w-1 h-1 bg-primary shadow-[0_0_10px_#c3f5ff]"></div>
+<div class="space-y-4">
+<span class="font-label text-[10px] text-primary tracking-[0.3em]" style="">ANALYSIS.MD</span>
+<h3 class="font-headline text-3xl font-bold" style="">Resultados Orientados a Dados</h3>
+<p class="text-on-surface-variant" style="">Desenvolvimento de modelos preditivos que reduzem incertezas operacionais e maximizam a tomada de decisão estratégica.</p>
+</div>
+<div class="space-y-4">
+<span class="font-label text-[10px] text-primary tracking-[0.3em]" style="">OPTIMIZE.EXE</span>
+<h3 class="font-headline text-3xl font-bold" style="">Otimização de Performance</h3>
+<p class="text-on-surface-variant" style="">Refatoração de pipelines de dados e fluxos sistêmicos, reduzindo latência e consumo de recursos em ambientes críticos.</p>
+</div>
+<div class="space-y-4">
+<span class="font-label text-[10px] text-primary tracking-[0.3em]" style="">SCALE.SYS</span>
+<h3 class="font-headline text-3xl font-bold" style="">Arquiteturas Escaláveis</h3>
+<p class="text-on-surface-variant" style="">Sistemas resilientes construídos para crescer sem fricção, utilizando padrões modernos de nuvem e microsserviços.</p>
+</div>
+</div>
+</section>
+<!-- Section 2: Expertise/Skills (Tecnologias) -->
+<section class="px-8 md:px-24 mb-24 scroll-mt-24" id="stack">
+<div class="flex flex-col md:flex-row gap-12">
+<div class="md:w-1/3">
+<h2 class="font-headline text-4xl font-black mb-6" style="">TECH_STACK</h2>
+<p class="text-on-surface-variant" style="">O ecossistema que utilizo para construir soluções robustas e inteligentes.</p>
+</div>
+<div class="md:w-2/3 flex flex-wrap gap-3">
+<div class="group border border-outline-variant/20 px-4 py-2 hover:bg-primary/10 transition-colors flex items-center gap-3 cursor-default">
+<span class="text-xs font-label text-on-surface-variant group-hover:text-primary transition-colors" style="">PYTHON</span>
+<div class="w-1.5 h-1.5 bg-primary group-hover:scale-125 transition-transform"></div>
+</div>
+<div class="group border border-outline-variant/20 px-4 py-2 hover:bg-primary/10 transition-colors flex items-center gap-3 cursor-default">
+<span class="text-xs font-label text-on-surface-variant group-hover:text-primary transition-colors" style="">RPA</span>
+<div class="w-1.5 h-1.5 bg-primary group-hover:scale-125 transition-transform"></div>
+</div>
+<div class="group border border-outline-variant/20 px-4 py-2 hover:bg-primary/10 transition-colors flex items-center gap-3 cursor-default">
+<span class="text-xs font-label text-on-surface-variant group-hover:text-primary transition-colors" style="">IA</span>
+<div class="w-1.5 h-1.5 bg-primary group-hover:scale-125 transition-transform"></div>
+</div>
+<div class="group border border-outline-variant/20 px-4 py-2 hover:bg-primary/10 transition-colors flex items-center gap-3 cursor-default">
+<span class="text-xs font-label text-on-surface-variant group-hover:text-primary transition-colors" style="">LINUX</span>
+<div class="w-1.5 h-1.5 bg-primary group-hover:scale-125 transition-transform"></div>
+</div>
+<div class="group border border-outline-variant/20 px-4 py-2 hover:bg-primary/10 transition-colors flex items-center gap-3 cursor-default">
+<span class="text-xs font-label text-on-surface-variant group-hover:text-primary transition-colors" style="">C#</span>
+<div class="w-1.5 h-1.5 bg-primary group-hover:scale-125 transition-transform"></div>
+</div>
+<div class="group border border-outline-variant/20 px-4 py-2 hover:bg-primary/10 transition-colors flex items-center gap-3 cursor-default">
+<span class="text-xs font-label text-on-surface-variant group-hover:text-primary transition-colors" style="">JAVASCRIPT</span>
+<div class="w-1.5 h-1.5 bg-primary group-hover:scale-125 transition-transform"></div>
+</div>
+<div class="group border border-outline-variant/20 px-4 py-2 hover:bg-primary/10 transition-colors flex items-center gap-3 cursor-default">
+<span class="text-xs font-label text-on-surface-variant group-hover:text-primary transition-colors" style="">SQL</span>
+<div class="w-1.5 h-1.5 bg-primary group-hover:scale-125 transition-transform"></div>
+</div>
+<div class="group border border-outline-variant/20 px-4 py-2 hover:bg-primary/10 transition-colors flex items-center gap-3 cursor-default">
+<span class="text-xs font-label text-on-surface-variant group-hover:text-primary transition-colors" style="">API REST</span>
+<div class="w-1.5 h-1.5 bg-primary group-hover:scale-125 transition-transform"></div>
+</div>
+<div class="group border border-outline-variant/20 px-4 py-2 hover:bg-primary/10 transition-colors flex items-center gap-3 cursor-default">
+<span class="text-xs font-label text-on-surface-variant group-hover:text-primary transition-colors" style="">POWER APPS</span>
+<div class="w-1.5 h-1.5 bg-primary group-hover:scale-125 transition-transform"></div>
+</div>
+<div class="group border border-outline-variant/20 px-4 py-2 hover:bg-primary/10 transition-colors flex items-center gap-3 cursor-default">
+<span class="text-xs font-label text-on-surface-variant group-hover:text-primary transition-colors" style="">DOCKER</span>
+<div class="w-1.5 h-1.5 bg-primary group-hover:scale-125 transition-transform"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Professional Journey (Trajetória) -->
+<section class="px-8 md:px-24 mb-24 scroll-mt-24" id="experience">
+<div class="mb-12">
+<span class="font-label text-xs tracking-widest text-primary" style="">// TRAJETÓRIA_PROFISSIONAL</span>
+<div class="h-px w-full bg-outline-variant/20 mt-4"></div>
+</div>
+<div class="space-y-12">
+<!-- Experience Item 1 -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6 group">
+<div class="md:col-span-1">
+<span class="font-label text-sm text-primary tracking-widest" style="">2022 - PRESENTE</span>
+</div>
+<div class="md:col-span-3 border-l border-outline-variant/30 pl-8 relative">
+<div class="absolute -left-[4.5px] top-0 w-2 h-2 bg-primary rounded-full group-hover:scale-125 transition-transform"></div>
+<h3 class="font-headline text-2xl font-bold mb-2" style="">Analista de Sistemas Sênior | Automação &amp; Dados</h3>
+<p class="text-on-surface-variant max-w-3xl" style="">Liderança técnica no desenho de arquiteturas para processamento de grandes volumes de dados. Desenvolvimento de robôs (RPA) complexos para redução de overhead operacional e implementação de modelos de IA preditiva para suporte à decisão executiva.</p>
+</div>
+</div>
+<!-- Experience Item 2 -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6 group">
+<div class="md:col-span-1">
+<span class="font-label text-sm text-on-surface-variant/60 tracking-widest" style="">2019 - 2022</span>
+</div>
+<div class="md:col-span-3 border-l border-outline-variant/30 pl-8 relative">
+<div class="absolute -left-[4.5px] top-0 w-2 h-2 bg-outline-variant/50 rounded-full group-hover:bg-primary transition-colors"></div>
+<h3 class="font-headline text-2xl font-bold mb-2" style="">Desenvolvedor Fullstack Pleno</h3>
+<p class="text-on-surface-variant max-w-3xl" style="">Construção de sistemas escaláveis utilizando Python e C#. Foco em integração de APIs REST e modernização de legados para infraestrutura em Docker.</p>
+</div>
+</div>
+<!-- Experience Item 3 -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6 group">
+<div class="md:col-span-1">
+<span class="font-label text-sm text-on-surface-variant/60 tracking-widest" style="">2017 - 2019</span>
+</div>
+<div class="md:col-span-3 border-l border-outline-variant/30 pl-8 relative">
+<div class="absolute -left-[4.5px] top-0 w-2 h-2 bg-outline-variant/50 rounded-full group-hover:bg-primary transition-colors"></div>
+<h3 class="font-headline text-2xl font-bold mb-2" style="">Analista de Dados / Desenvolvedor</h3>
+<p class="text-on-surface-variant max-w-3xl" style="">Desenvolvimento de dashboards estratégicos e automação de extração de dados (ETL) via SQL e scripts Python, otimizando o tempo de resposta das áreas de negócio.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Selected Projects (Projetos) -->
+<section class="px-8 md:px-24 mb-32 scroll-mt-24" id="projects">
+<div class="mb-16">
+<span class="font-label text-xs tracking-widest text-primary" style="">PROJETOS_SELECIONADOS</span>
+<div class="h-px w-full bg-outline-variant/20 mt-4"></div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-24">
+<!-- Project 1 -->
+<div class="group">
+<div class="relative aspect-[16/9] mb-12 overflow-hidden bg-surface-container-lowest border border-white/5">
+<img alt="Predictive Analytics Dashboard" class="w-full h-full object-cover opacity-60 group-hover:scale-105 group-hover:opacity-80 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDY1TgSWydDZCHb-FfJ-1sxajcDL51tLBunDmGKBoxEXAXWVuEtPijFbm9Ieq4HEWQdkhekHeTmjdV9I-ywUjFPJXXHv8oWq-dc4ftW0Nzj5EZeLa__73B0PqAraRL47D8buFzSdQK3Y-_Mz2mTUYhsQomXRYGXNC22G3ArQ2C77Nq9WypbbVGpUQ90yNq9K6MH9LWnnMepKBo1AkNEeE-OFxPf1JI2VMelxilRwV8bq_n7XGTBkjen1EzBgH8z79jFxAwPzixzGx8" style="">
+<div class="absolute bottom-6 left-6 flex items-center gap-3">
+<div class="w-2 h-2 rounded-full bg-surface-tint animate-pulse"></div>
+<span class="text-[10px] font-label tracking-widest text-white/70" style="">SISTEMA_ATIVO</span>
+</div>
+</div>
+<h3 class="font-headline text-4xl font-bold mb-4" style="">Predictive Analytics Dashboard</h3>
+<p class="text-on-surface-variant mb-8 max-w-lg" style="">Arquitetura end-to-end de BI preditivo utilizando Redes Neurais Recorrentes para forecasting de demanda. Integração de alta performance com fluxos críticos de supply chain.</p>
+<div class="flex flex-wrap gap-4 mb-8">
+<span class="text-[10px] font-label border border-outline-variant/30 px-3 py-1" style="">PYTHON</span>
+<span class="text-[10px] font-label border border-outline-variant/30 px-3 py-1" style="">TENSORFLOW</span>
+<span class="text-[10px] font-label border border-outline-variant/30 px-3 py-1" style="">REACT</span>
+</div>
+<div class="mt-6">
+<a class="group/btn inline-flex items-center gap-3 bg-white/5 border border-outline-variant/30 px-6 py-3 text-[10px] font-label font-bold text-white uppercase tracking-[0.2em] hover:bg-primary hover:text-on-primary transition-all active:scale-95" href="https://github.com/gilberto-rodrigues/predictive-analytics" target="_blank" style="">
+<span class="material-symbols-outlined text-sm" style="">link</span>
+                            VER NO GITHUB
+                        </a>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="group">
+<div class="relative aspect-[16/9] mb-12 overflow-hidden bg-surface-container-lowest border border-white/5">
+<img alt="RPA Orchestrator" class="w-full h-full object-cover opacity-60 group-hover:scale-105 group-hover:opacity-80 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtE-TZF804suXxK6fjASayrUJgKiVWLYofP_fuqAX_gG7KN41-ZSxC2Kwk5CCW_F7de9iMDLsT5p-T3UlaRKh_HUQU4uswMD3eoIs8BGhhjSQmWOA5hbRrI6LE34j6IvIr10-7FlhT0xZ8hrqGIzjtKh1uNdMoaaixq9VS_djYOabqjEP3oifo5zVbHcLI8UByqorrbGhXzUtTZOT-oiTUu8F9ueKZgq37CHuEvjivAnQKMojAB9a4o4DaluHwwX8Q2wVb8ry4Uno" style="">
+<div class="absolute bottom-6 left-6 flex items-center gap-3">
+<div class="w-2 h-2 rounded-full bg-surface-tint animate-pulse"></div>
+<span class="text-[10px] font-label tracking-widest text-white/70" style="">ORQUESTRADOR_LIVE</span>
+</div>
+</div>
+<h3 class="font-headline text-4xl font-bold mb-4" style="">RPA Orchestrator</h3>
+<p class="text-on-surface-variant mb-8 max-w-lg" style="">Ecossistema escalável para orquestração de robôs de automação (RPA). Implementação de monitoramento preditivo e gestão de fila distribuída.</p>
+<div class="flex flex-wrap gap-4 mb-8">
+<span class="text-[10px] font-label border border-outline-variant/30 px-3 py-1" style="">C#</span>
+<span class="text-[10px] font-label border border-outline-variant/30 px-3 py-1" style="">DOCKER</span>
+<span class="text-[10px] font-label border border-outline-variant/30 px-3 py-1" style="">SQL SERVER</span>
+</div>
+<div class="mt-6">
+<a class="group/btn inline-flex items-center gap-3 bg-white/5 border border-outline-variant/30 px-6 py-3 text-[10px] font-label font-bold text-white uppercase tracking-[0.2em] hover:bg-primary hover:text-on-primary transition-all active:scale-95" href="https://github.com/gilberto-rodrigues/rpa-orchestrator" target="_blank" style="">
+<span class="material-symbols-outlined text-sm" style="">terminal</span>
+                            ACESSAR REPOSITÓRIO
+                        </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: Contact/CTA (Contato) -->
+<section class="px-8 md:px-24 mb-48 text-center scroll-mt-24" id="contact">
+<div class="max-w-3xl mx-auto py-24 border border-outline-variant/10 relative">
+<div class="absolute inset-0 bg-primary/5 blur-3xl rounded-full"></div>
+<div class="relative z-10">
+<h2 class="font-headline text-4xl md:text-6xl font-black mb-8 leading-tight" style="">PRONTO PARA O PRÓXIMO <br><span class="text-primary-container" style="">UPGRADE?</span></h2>
+<p class="text-on-surface-variant mb-12 text-lg" style="">Disponível para novos desafios arquiteturais e consultoria de dados.</p>
+<div class="flex flex-col md:flex-row justify-center items-center gap-6">
+<a class="w-full md:w-auto bg-on-primary-container text-white px-12 py-5 font-label font-bold uppercase tracking-widest flex items-center justify-center gap-4 hover:bg-on-primary-container/80 transition-colors active:scale-95" href="mailto:hello@gilberto.dev" style="">
+<span class="material-symbols-outlined" style="">mail</span>
+                            VAMOS CONVERSAR
+                        </a>
+<a class="w-full md:w-auto bg-white/5 border border-outline-variant/30 text-on-surface px-12 py-5 font-label font-bold uppercase tracking-widest flex items-center justify-center gap-4 hover:bg-white/10 transition-colors active:scale-95" href="#" style="">
+<span class="material-symbols-outlined" style="">download</span>
+                            MEU CURRÍCULO
+                        </a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-neutral-950 w-full py-12 border-t border-white/5">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 gap-6">
+<div class="text-neutral-200 font-bold font-['Inter'] uppercase tracking-widest text-[10px]" style="">
+                © 2024 Gilberto Rodrigues // SYSTEM_READY
+            </div>
+<div class="flex gap-12">
+<a class="font-['Inter'] uppercase tracking-widest text-[10px] font-medium text-neutral-500 hover:text-cyan-300 transition-colors" href="#" style="">GITHUB</a>
+<a class="font-['Inter'] uppercase tracking-widest text-[10px] font-medium text-neutral-500 hover:text-cyan-300 transition-colors" href="#" style="">LINKEDIN</a>
+<a class="font-['Inter'] uppercase tracking-widest text-[10px] font-medium text-neutral-500 hover:text-cyan-300 transition-colors" href="#home" style="">TERMINAL</a>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: &quot;FILL&quot; 1;">terminal</span>
+<span class="font-label text-[10px] text-on-surface-variant uppercase tracking-widest" style="">STATUS: OTIMIZADO</span>
+</div>
+</div>
+</footer>
+</body></html>
